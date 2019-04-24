@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  font-family: sans-serif;
+  text-align: center;
+  width: 100%;
+  background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+}
+
+.search-form {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(53, 52, 48);
+}
+
+.search-bar {
+  width: 50%;
+  min-width: 250px;
+  border: none;
+  padding: 10px;
+}
+
+.search-btn {
+  background: #86949c;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.recipes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.reciep-item {
+  background: #e6ebe9;
+  flex-basis: 40%;
+  min-width: 300px;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px #5a6469;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.reciep-item h1 {
+  margin: 1em;
+}
+
+.reciep-item img {
+  width: 200px;
+  border-radius: 50%;
+  margin: 2em;
+}
+
+ul {
+  list-style: none;
+}
+@media only screen and (max-width: 730px) {
+  .recipes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reciep-item {
+    width: 80%;
+    max-width: 500px;
+  }
+}
